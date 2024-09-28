@@ -1,0 +1,145 @@
+/* Ensure the parent container takes the full height */
+body {
+  display: flex;
+}
+
+.directory-container {
+  height: 80vh;
+  width: 50vh;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  background-color: #6849a2;
+  box-shadow: 5px 1px 10px 0px #d3c4c4;
+  padding: 10px;
+}
+.directory-header {
+  h1 {
+    color: #333;
+    background: white;
+    padding: 10px;
+    font-weight: 100;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #cdcdcd;
+  }
+  img {
+    width: 50px;
+  }
+  h2 {
+    padding: 8px;
+    background: white;
+    font-size: 15px;
+    text-align: left;
+    color: rgb(179, 179, 179);
+    border: 2px solid #e1e1e1;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #cdcdcd;
+  }
+}
+.directory-form {
+  .directory-input {
+    width: 100%;
+    margin-bottom: 10px;
+    input {
+      margin: 3px;
+      padding: 5px;
+      width: 140px;
+      border-radius: 5px;
+      border: 0;
+      padding: 10px;
+      color: #222222;
+    }
+  }
+}
+.directory-submit {
+  margin-top: 5px;
+  button {
+    background: #7350b9;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  button.add {
+    background: #4caf50;
+  }
+  button.update {
+    background: #ff9800;
+    color: white;
+  }
+  .hidden {
+    display: none;
+  }
+}
+.directory-list {
+  margin: 10px 5px;
+  border: 1px solid rgb(176, 69, 175);
+  border-radius: 5px;
+  height: 40vh;
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+    padding: 15px;
+    margin: 10px;
+    height: 100%;
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: scroll;
+  }
+
+  ul::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ul::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ul::-webkit-scrollbar-thumb {
+    background: #7350b9;
+  }
+
+  li:hover {
+    background-color: white;
+  }
+  li {
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    background: rgb(223, 207, 207);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    color: #525769;
+    transition: all 0.3s;
+  }
+  item {
+    width: 200px;
+  }
+  button.delete {
+    margin-left: 10px;
+    background: #f44336;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+  button.update {
+    background: #18ed18;
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    padding: 5px 15px;
+    cursor: pointer;
+  }
+}

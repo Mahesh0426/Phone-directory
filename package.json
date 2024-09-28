@@ -1,0 +1,14 @@
+{
+  "name": "phone-directory-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server",
+    "build": "tsc -w"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "typescript": "^5.6.2"
+  }
+}
